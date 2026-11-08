@@ -1,0 +1,17 @@
+# PyTorch KHÔNG nằm ở đây vì cần bản CUDA phù hợp. Cài trước, ví dụ trên máy có RTX 3060:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+# Trên Google Colab torch đã có sẵn.
+
+diffusers>=0.30.0
+transformers>=4.40.0
+peft>=0.11.0
+accelerate>=0.30.0
+safetensors
+sentencepiece   # cho mô hình dịch Việt-Anh (translator.py)
+pandas
+pillow
+tqdm
+gradio>=4.0
+
+# Tùy chọn: AdamW 8-bit để tiết kiệm VRAM (chạy ổn trên Colab/Linux, trên Windows cần bản mới)
+# bitsandbytes

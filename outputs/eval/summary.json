@@ -1,0 +1,7 @@
+{
+  "num_prompts": 100,
+  "clip_real_mean": 28.69452564239502,
+  "clip_base_mean": 31.614012050628663,
+  "clip_lora_mean": 31.113005714416502,
+  "lora_beats_base_rate": 0.41
+}

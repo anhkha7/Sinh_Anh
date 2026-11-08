@@ -1,0 +1,36 @@
+# ===== Bí mật: không bao giờ đưa lên GitHub =====
+KGAT_*
+kaggle.json
+.kaggle/
+access_token
+.env
+
+# ===== Môi trường / file sinh tự động =====
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+
+# ===== Dữ liệu (dung lượng lớn, có bản quyền / điều khoản riêng) =====
+data/
+dataset_final.csv
+artemis_dataset_release_v0.csv
+wikiart/
+
+# ===== Kết quả huấn luyện: chỉ giữ những thứ nhỏ và có ích =====
+outputs/*
+
+# mô hình LoRA đã train (~12MB) để người khác chạy demo không cần train
+!outputs/lora/
+outputs/lora/*
+!outputs/lora/final/
+!outputs/lora/loss_log.csv
+!outputs/lora/samples/
+outputs/lora/samples/*
+!outputs/lora/samples/step006000_*.png
+
+# kết quả đánh giá (bảng điểm, lưới ảnh), bỏ thư mục ảnh trung gian
+!outputs/eval/
+!outputs/eval_extra/
+outputs/eval_extra/images/
