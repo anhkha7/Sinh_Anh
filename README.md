@@ -21,8 +21,8 @@ Prompt khi huấn luyện và khi sinh ảnh có cùng định dạng:
 Repo đã kèm trọng số LoRA đã train (`outputs/lora/final`, khoảng 12MB).
 
 ```powershell
-git clone <link-repo>
-cd <thư-mục-repo>
+git clone https://github.com/anhkha7/Sinh_Anh.git
+cd Sinh_Anh
 python -m venv .venv
 .venv\Scripts\activate
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124   # máy có card NVIDIA
@@ -48,8 +48,8 @@ kiểm chứng trên card này**, nên có hai cách, ưu tiên cách A.
 
 **Cách B: chạy trực tiếp trên laptop** (cần cài sẵn Python 3.10-3.13 và Git; cần Internet và khoảng 10GB trống ở lần đầu):
 ```powershell
-git clone <link-repo>
-cd <thư-mục-repo>
+git clone https://github.com/anhkha7/Sinh_Anh.git
+cd Sinh_Anh
 python -m venv .venv
 .venv\Scripts\activate
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
